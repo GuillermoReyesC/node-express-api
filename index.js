@@ -72,6 +72,13 @@ let notes = [
 
    app.post('/api/notes', (req, res) => {
         const note = req.body
+
+        if(!note || !note.content){
+            return res.status(400).json({
+                error: 'content missing'
+            });
+        }
+
         
         const ids = notes.map(note=> note.id);
         const maxId = Math.max(...ids);
