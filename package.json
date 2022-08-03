@@ -1,0 +1,16 @@
+{
+  "name": "node-express-api",
+  "version": "1.0.0",
+  "description": "easy way to lear node",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index.js",
+    "lint": "npm run lint",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "ISC"
+}
